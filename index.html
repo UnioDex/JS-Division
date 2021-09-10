@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="icon" type="image/png" href="favicon.png" />
-
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"
+    ></script>
+    <script src="semantic/semantic.js"></script>
     <title>JS Division</title>
-  </head>
+</head>
 
-  <body>
-    <!-- Render node for radio waves -->
-    <canvas id="doodle" width="625" height="593"></canvas>
+<body>
+<main>
+    <div class="page header">
+        <div class="ui container center aligned">
+            <h2 class="ui center aligned n-header">nDivision</h2>
+        </div>
+    </div>
 
-    <!-- Programming logic for waves-->
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+    <div class="ui container center aligned">
+        <canvas id="doodle" width="625" height="593"></canvas>
+        <form class="n-unset">
+            <p class="n-id-text">
+                n #<input
+                    id="n-id"
+                    class="n-unset n-input"
+                    type="text"
+                    value="8888"
+            />
+            </p>
+        </form>
+        <p class="n-credit-text">
+            Made by
+            <a
+                    class="n-unset"
+                    target="_blank"
+                    href="https://twitter.com/YigitDuman"
+            >Yigit Duman</a
+            >
+        </p>
+    </div>
+</main>
+<!-- Programming logic for waves-->
+<script type="module" src="main.js"></script>
+</body>
 </html>
